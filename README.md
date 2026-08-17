@@ -1,4 +1,4 @@
-# OColT: Ordinal Priors for Colonoscopy Temporal Segmentation
+# Ordinal Priors for Colonoscopy Temporal Segmentation
 
 Official implementation of "Ordinal Priors for Colonoscopy Temporal
 Segmentation" (MICCAI 2026).
