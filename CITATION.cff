@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use OColT, please cite this work."
+title: "OColT: Ordinal Priors for Colonoscopy Temporal Segmentation"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Jang
+    given-names: Seunghyun
+  - family-names: Lee
+    given-names: Dongheon
+  - family-names: Jung
+    given-names: Yoonsung
+  - family-names: Kim
+    given-names: Eue Young
+  - family-names: Shin
+    given-names: Na Mi
+  - family-names: Kim
+    given-names: Byeong Gwan
+  - family-names: Im
+    given-names: Jong Pil
+  - family-names: Kim
+    given-names: Sihyun
+  - family-names: Park
+    given-names: Chang Min
+repository-code: "https://github.com/jangbi1/OColT"

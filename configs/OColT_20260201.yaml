@@ -1,0 +1,41 @@
+name: OColT
+
+model:
+  input_size: 384
+  output_size: 7
+  feature_sizes: [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64]
+  kernel_size: 7
+  num_convolutions: 2
+  dropout: 0.5
+  residual: true
+  last_layer: conv
+
+training:
+  seed: 20260845
+  deterministic: true
+  batch_size: 4
+  num_workers: 0
+  epochs: 100
+  learning_rate: 5.0e-4
+  minimum_learning_rate: 1.0e-6
+  warmup_learning_rate: 5.0e-7
+  warmup_epochs: 5
+  weight_decay: 0.01
+  gradient_clip: 1.0
+  class_weighting: sqrt_inverse
+  cross_entropy_weight: 0.5
+  tmse_weight: 0.15
+  tmse_threshold: 4.0
+  boundary_smoothness_weight: 0.5
+  boundary_radius: 5
+  ordinal_hidden_size: 64
+  ordinal_weight: 0.3
+  validation_every: 1
+  training_stream: random_single
+  validation_stream: 0
+
+ocd:
+  backward_penalty: 10.0
+  skip_penalty: 5.0
+  start_state: -1
+  smoothing_window: 3
